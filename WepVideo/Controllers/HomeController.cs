@@ -12,7 +12,8 @@ namespace WepVideo.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Peliculas> lstPeliculas =  Contenido();
+            return View(lstPeliculas);
         }
 
         public IActionResult About()
